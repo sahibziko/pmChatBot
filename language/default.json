@@ -1,5 +1,5 @@
 {
-    "START": "Hi, You can message my owner with this bot. You can send any media. My owner will reply ur message ASAP!",
+    "START": "'Salam! Sizi @SharkGameBot sahibi ilə əlaqə yaratmanızda kömək edəcəyəm. Və @intiqam tez bir zamanda sizə cavab yazacaqdır şikayət və təkliflərinizi bildirə bilərsiniz!'",
     "ERROR_REPLY": "*Please reply an message.*",
     "ERROR_NOTFOUND": "*Message not found in database. Can't reply.*",
     "SENDER": "*Sender:*"
