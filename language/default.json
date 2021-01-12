@@ -1,5 +1,6 @@
 {
-    "START": "Salam! mən DTÖ MAFİYA ETİRAF BOTUYAM.Mənə etiraf edə bilərsən!",
+    "START": "*🤖Salam! Botlarımızla barədə İrad və Təkliflərinizi buraya yazaraq bildirə bilərsiniz!
+🖥Sahibim Sizə Tez bir zamanda cavab yazacaqdır! Təşəkkürlər.!*",
     "ERROR_REPLY": "*Please reply an message.*",
     "ERROR_NOTFOUND": "*Message not found in database. Can't reply.*",
     "SENDER": "*Sender:*"
