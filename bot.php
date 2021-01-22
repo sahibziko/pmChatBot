@@ -7,7 +7,20 @@ if (file_exists(__DIR__ . '/.env')) {
     $dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
     $dotenv->load();
 }
-
+$keyboard = [
+    'inline_keyboard' => [
+        [
+            ['text' => "Rəsmi Kanal", 'url' => 'https://t.me/AzeBots']
+        ]
+    ]
+];
+$encodedKeyboard = json_encode($keyboard);
+$parameterss = array(
+  "chat_id" => $userChatId,
+  "text" => $link,
+  'reply_markup' => $encodedKeyboard,
+);
+send("sendMessage", $parameterss);
 
 if (file_exists(__DIR__ . '/language/default.json')) {
     $LANG = json_decode(file_get_contents("./language/default.json"), true);
