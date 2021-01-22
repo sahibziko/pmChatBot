@@ -7,10 +7,14 @@ if (file_exists(__DIR__ . '/.env')) {
     $dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
     $dotenv->load();
 }
+$userMessage = $update["message"]["text"]?$update["message"]["text"]:"Nothing";
+
+if ($userMessage=="/start") {
+
 $keyboard = [
     'inline_keyboard' => [
         [
-            ['text' => "Rəsmi Kanal", 'url' => 'https://t.me/AzeBots']
+            ['text' => "BUTON ADIII", 'url' => 'gedeceyi link']
         ]
     ]
 ];
@@ -21,6 +25,8 @@ $parameterss = array(
   'reply_markup' => $encodedKeyboard,
 );
 send("sendMessage", $parameterss);
+
+}
 
 if (file_exists(__DIR__ . '/language/default.json')) {
     $LANG = json_decode(file_get_contents("./language/default.json"), true);
